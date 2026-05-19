@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Amizhtha Canteen</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            🍽️ Amizhtha
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html" class="active">Menu</a></li>
+            <li><a href="cart.html">Cart 🛒</a></li>
+            <li><a href="order.html">Order</a></li>
+        </ul>
+    </nav>
+
+    <!-- MENU HEADER -->
+    <section class="page-header">
+        <h1>Our Menu 🍛</h1>
+        <p>Fresh and delicious food, just for you!</p>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section class="menu">
+
+
+
+        <!-- SNACKS -->
+        <h2 class="category-title">🧆 Snacks</h2>
+        <div class="menu-container">
+
+            <div class="menu-card">
+            <img src="roll.png" alt="chicken roll" class="menu-img">
+                <div class="menu-icon"></div>
+                <h3>chicken roll</h3>
+                <p>Crispy chicken roll with </p>
+                <div class="menu-footer">
+                    <span class="price">₹35</span>
+                    <button class="btn-add" onclick="addToCart('chicken roll', 35)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="chicsan.jpg" alt="chicken sandwich" class="menu-img">
+                <div class="menu-icon"></div>
+
+                <h3>chicken Sandwich</h3>
+                <p>Fresh chicken sandwich with cheese</p>
+                <div class="menu-footer">
+                    <span class="price">₹50</span>
+                    <button class="btn-add" onclick="addToCart('chicken Sandwich', 40)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="paneersan.png" alt="paneer sandwich" class="menu-img">
+                <div class="menu-icon"></div>
+                <h3>Paneer Sandwich</h3>
+                <p>Fresh paneer sandwich with cheese</p>
+                <div class="menu-footer">
+                    <span class="price">₹40</span>
+                    <button class="btn-add" onclick="addToCart('Paneer Sandwich', 40)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="chickenpuff.png" alt="chicken puff" class="menu-img">
+                <div class="menu-icon"></div>
+                <h3>chicken Puff</h3>
+                <p>Flaky puff pastry with spiced vegetables</p>
+                <div class="menu-footer">
+                    <span class="price">₹20</span>
+                    <button class="btn-add" onclick="addToCart('Chicken Puff', 20)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- DRINKS -->
+        <h2 class="category-title">🍹 Drinks</h2>
+        <div class="menu-container">
+            <div class="menu-card">
+                <img src="rosemilk.png" alt="rosemilk" class="menu-img">
+                <div class="menu-icon"></div>
+                <h3>Rose Milk</h3>
+                <p>Refreshing rose milk with chia seeds</p>
+                <div class="menu-footer">
+                    <span class="price">₹25</span>
+                    <button class="btn-add" onclick="addToCart('Cold Rose Milk', 25)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="lassi.png" alt="lassi" class="menu-img">
+                <div class="menu-icon"></div>
+                <h3>Lassi</h3>
+                <p>Thick and creamy sweet lassi</p>
+                <div class="menu-footer">
+                    <span class="price">₹30</span>
+                    <button class="btn-add" onclick="addToCart('Lassi', 20)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="coffee.png" alt="Coffee" class="menu-img">
+                <div class="menu-icon"></div>
+                <h3>Tea / Coffee</h3>
+                <p>Hot freshly brewed tea or coffee</p>
+                <div class="menu-footer">
+                    <span class="price">₹15</span>
+                    <button class="btn-add" onclick="addToCart('Tea / Coffee', 15)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="coldcoffee.png" alt="Cold Coffee" class="menu-img">
+                <div class="menu-icon"></div>
+                <h3>Cold Coffee</h3>
+                <p>Cold Sweet Coffee Made With Perfection</p>
+                <div class="menu-footer">
+                    <span class="price">₹60</span>
+                    <button class="btn-add" onclick="addToCart('Cold Coffee', 35)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>🍽️ Amizhtha Canteen</p>
+        <p>B.S. Abdur Rahman Crescent Institute of Science and Technology</p>
+        <p>Made with ❤️ by Crescent Students</p>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>
